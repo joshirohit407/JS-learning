@@ -16,7 +16,7 @@
 // console.log(number.toLocaleString('en-IN'))       // 10,00,000
 
 
-// ********************************* MATHS ************************************************** //
+// ********************************* MATH ************************************************** //
 
 // console.log(Math);          // will give Math functions in browser
 // console.log(Math.abs(-4));  // gives absolutes value  4
