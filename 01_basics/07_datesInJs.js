@@ -35,3 +35,15 @@ console.log (newDate.toLocaleString('default', {
     weekday : "long"
 }))          // Thursday
 
+
+
+const options = {                                   // To show Indian time.
+    timeZone: 'Asia/Kolkata',
+    hour: '2-digit',
+    minute: '2-digit',
+    second: '2-digit',
+    hour12: true
+};
+const indianTime = new Date().toLocaleString('en-US', options);
+
+console.log(`Current time in India: ${indianTime}`);
