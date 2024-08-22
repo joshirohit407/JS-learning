@@ -11,7 +11,7 @@ if (true) {                       // a,b,c are defined inside the scopes so ther
 
 // console.log(a)        //  a is not defined, which is right.
 // console.log(b)        //  b is not defined, which is right.
-console.log(c)          //  30 , but we have defined above that var c = 300, but output is 30 which should not come out, that is why we don't use var.
+//console.log(c)          //  30 , but we have defined above that var c = 300, but output is 30 which should not come out, that is why we don't use var.
 
 
 
@@ -28,15 +28,57 @@ console.log(c)          //  30 , but we have defined above that var c = 300, but
 
 // Nested Scopes
 
-function one() {
+function one() {                         // Here function one is bigger function and two is small. So, for func two the func one act as global func. Two can access the values inside func one
     const username = "rohit"
 
     function two() {
         const website = "youtube"
         console.log(username)
     }
-//console.log(website);         // website is not defined.
+    //console.log(website);         // website is not defined.
 
-two()
+    two()                // This will give rohit , taking value of username from func one, but will only print value when func one is also executed.
 }
-one()
+//one()
+
+
+
+// Understanding through if conditions :
+
+if (true) {
+    const username = "rohit"
+    if (username === "rohit") {
+        const website = " facebook"
+        console.log(username + website );
+    }
+    //console.log(website)           // website is not defined outside scope.
+}
+//console.log(username)                // username is also not defined.
+
+
+
+// if (true) {
+//     const username = "rohit"
+//     if (username === "rohit") {
+//         const website = " facebook"
+//         console.log(username + website );
+//     }
+// }                           //if only this much code is written then will give result ---  rohit facebook
+
+
+
+// *************************** Interesting Concept "Hoisting" (just a little touch for now)**********************************
+
+console.log(addOne(5))          // output = 6 , can access like this.
+
+function addOne (num){
+    return num  + 1
+}
+
+//////////////////////////////////////////
+
+console.log(addTwo(5))        // will give an error. Cannot access "addTwo" function before initialization.
+
+const addTwo = function(num){            // We can define a function like this inside a variable. 
+    return num + 2
+}
