@@ -37,8 +37,10 @@ const temperatue = 41
 
 
 //  const balance = 1000
-//  if (balance > 500) console.log("Hello"); console.log("rohit")    // implicit scope
+//  if (balance > 500) console.log("Hello"), console.log("rohit")    // implicit scope
 // // This will give the output but we don't write like this.. this is bad practice to write code.
+// if printing only one value then its Ok but if you are printing many values then its bad practice.
+// you can write many console logs separated by , comma.
 
 
 // const balance = 1000
