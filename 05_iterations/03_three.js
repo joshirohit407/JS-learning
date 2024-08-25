@@ -1,10 +1,10 @@
 // "for of" Loop :
 
-const arr = [1, 2, 3, 4, 5]
+const arr = [1, 2, 3, 4, 5, aman, rohit]
 
 for (const num of arr) {
-    //console.log(num)
-}
+    //console.log(num)        // output: gives all values
+}                           
 
 
 const greetings = "Hello World!"
@@ -26,7 +26,7 @@ map.set('UK', 'United Kingdom')
 
 //console.log(map)
 
-// for of loop in map
+// "for of" loop in map
 for (const [key, value] of map) {
     //console.log(key, ':-' ,value )
 }
