@@ -39,3 +39,12 @@ const max = 20
 console.log(Math.floor(Math.random() * (max - min + 1)) + min)       //   (Important)
 
 
+// Function to get a random number between a speacific range
+
+function getRandomNumber (min, max) {
+  return Math.floor(Math.random() * (max - min + 1)) + min
+}
+
+const num = getRandomNumber(1, 100)
+console.log(num)
+
