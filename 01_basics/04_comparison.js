@@ -14,3 +14,6 @@ console.log(null >= 0)  // true
 // That's why 3rd one is true and 1st one is false.
 
 console.log("2" === 2)    //  false
+
+console.log(null == undefined)      // true
+console.log(null === undefined)     // false
